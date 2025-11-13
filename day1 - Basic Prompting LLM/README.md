@@ -83,11 +83,6 @@ def append_to_md_file(text, md_path):
 ```
 
 ## Key Takeaways
-Certainly—here’s your **previous Key Takeaways section with consolidated points** in Markdown format, ready to copy into your README.md:
-
-***
-
-## Key Takeaways
 
 - Improved Gemini API output structure by grouping reasoning, code, and result fields into a single object (`result`).  
 - Ensured code outputs were saved in `.json` (for data analysis) and formatted in `.md` (for optimal readability).  
