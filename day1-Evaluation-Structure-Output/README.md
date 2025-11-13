@@ -82,3 +82,28 @@
 - "eq" controls “are these two things equal?” when you use ==, letting you decide what equality means for your class."lt" controls “is this less than that?” when you use <, letting you define your own ordering rule.
 
 ---
+## How to Test
+
+1. Document setup
+
+Place your source document locally and ensure extracted_text is produced (e.g., via pdfplumber) as used by evaluation.py.​
+
+2. Run Q&A with guidance modes
+
+Execute question_set.py to generate answers for Terse, Moderate, and Cited guidance; verify outputs in out/question-set.md.​
+
+3. Rubric-based grading
+
+Run eval_answer.py to produce verbose rationales and strict enum scores {5,4,3,2,1}; confirm logs in out/eval-answer.md and that response.parsed returns an enum.​
+
+4. Aggregate scores across prompts
+
+Run eval_loop.py to compute average per-guidance scores and nearest enum labels; verify printed summary matches expectations.​
+
+5. Pairwise A/B judging
+
+Run pairwise.py to compare two guidance styles (e.g., Terse vs Cited) and confirm A/SAME/B label plus rationale is saved to out/pairwise.md.​
+
+5. Comparator ranking
+
+Run comparator.py to sort guidance styles using pairwise wins; confirm sorted leaderboard output in console.
