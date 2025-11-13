@@ -82,33 +82,18 @@ def append_to_md_file(text, md_path):
         md_file.write(text)
 ```
 
-### Example Output Transformation
+## Key Takeaways
+Certainly—here’s your **previous Key Takeaways section with consolidated points** in Markdown format, ready to copy into your README.md:
 
-```json
-{
-  "result": {
-    "text": "...summary...",
-    "executable_code": {"code": "...", "language": "PYTHON"},
-    "code_execution_result": {"output": "..."}
-  }
-}
-```
+***
 
-Converted to Markdown:
+## Key Takeaways
 
-
-## Reasoning
-...summary...
-
-## Code
-```python
-...
-```
-
-## Execution Result
-...
-
----
+- Improved Gemini API output structure by grouping reasoning, code, and result fields into a single object (`result`).  
+- Ensured code outputs were saved in `.json` (for data analysis) and formatted in `.md` (for optimal readability).  
+- Created a modular `append_to_md_file()` Python function, along with recursive scripts to convert `.json` outputs (with reasoning, code, and result fields) into clear, well-structured Markdown blocks. These tools handle nested dictionaries and automatically increase Markdown header depth (`##`, `###`, etc.) for each level, resulting in readable and organized reports for both flat and multi-layered data.  
+- Clarified the difference between Jupyter notebook shell syntax (`!curl`) and Python script download methods (`requests.get`) for efficiently retrieving files from URLs.  
+- Addressed common Python errors (like `dict_keys` not subscriptable, and differences between reading a whole JSON vs. JSON Lines format), and provided robust code patterns for extracting, formatting, and displaying model outputs (reasoning, code, results, summaries) in both machine-readable and human-readable formats.
 
 
 
