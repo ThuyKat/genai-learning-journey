@@ -16,8 +16,6 @@
 
 ### Document QA: Evaluation Prompt Engineering Workflow
 
-- Developed an automated pipeline to download technical PDFs, extract their text with `pdfplumber`, and prepare the content for generative summarization.
-- Leveraged Gemini API to generate context-aware summaries and evaluations from extracted document text.
 - Practiced prompt engineering by experimenting with diverse summary formats:
     - "Explain like I'm 5" (ELI5): Requesting very simple, child-friendly explanations.
     - "Summarize in 1 line": Directing the model to return an extremely concise response.
