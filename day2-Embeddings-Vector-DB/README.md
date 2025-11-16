@@ -1,7 +1,7 @@
 # Embeddings and Vector Stores/Databases
 
 ## GloVe by Example ( Simple explaination of how it is done)
-[Link to example](./Glove-Complete-Guide.md)
+[Link to example](./Glove-Complete-Guide.ipynb)
 
 ## Build a RAG Q&A system over custom documents
 [Link](./RAG-lab)
